@@ -1,0 +1,112 @@
+THE DEMO RESIDENTIAL TENANCY ACT, 2001 (FICTIONAL)
+
+NOTICE: This document is invented for demonstration and testing of the LegalLens software. It is not a real law and must not be relied on for any legal purpose.
+
+PART I - PRELIMINARY
+
+Section 1. Short title and application
+This Act may be called the Demo Residential Tenancy Act. It applies to every tenancy of a residential dwelling in the state, whether the agreement is written or oral. It does not apply to hotels, student hostels or premises let for less than thirty days.
+
+Section 2. Definitions
+In this Act, "landlord" means the person entitled to receive rent for a dwelling, "tenant" means the person who occupies a dwelling in return for rent, "deposit" means any money paid as security against damage or unpaid rent, and "Tribunal" means the Rent Tribunal established under Section 25.
+
+PART II - AGREEMENTS AND DEPOSITS
+
+Section 3. Written agreement
+A landlord must give the tenant a written tenancy agreement within fourteen days of the tenancy starting. The agreement must state the rent, the due date, the length of the tenancy and the amount of the deposit.
+
+Section 4. Security deposit limit
+A landlord shall not demand a deposit of more than two months' rent. A landlord who demands more than this limit commits an offence and the excess amount must be returned to the tenant.
+
+Section 5. Holding the deposit
+The landlord must keep the deposit in a separate bank account and must give the tenant the account details in writing. The deposit may not be used for the landlord's own expenses.
+
+Section 6. Return of the deposit
+The deposit must be returned within thirty days after the tenant vacates and returns the keys. The landlord may deduct only the reasonable cost of repairing damage beyond normal wear and tear and any unpaid rent, and must give an itemised statement of every deduction.
+
+Section 7. Interest on the deposit
+Where the deposit is held for more than twelve months, the landlord must pay the tenant simple interest on it at the rate notified by the government each year. The interest is paid together with the deposit when it is returned.
+
+PART III - RENT
+
+Section 8. Payment of rent
+Rent is payable monthly in advance unless the agreement says otherwise. The landlord must accept payment by bank transfer and must give a receipt for every payment made in cash.
+
+Section 9. Rent increases
+A landlord may increase the rent only once in any period of twelve months. The landlord must give the tenant at least ninety days' written notice of the increase. An increase of more than ten percent of the current rent in one year is void unless the Tribunal approves it.
+
+Section 10. Late payment
+If rent is unpaid for more than seven days after the due date, the landlord may charge a late fee of no more than two percent of the monthly rent. A landlord may not charge a late fee more than once for the same overdue payment.
+
+Section 11. Rent receipts and records
+The landlord must keep copies of all rent receipts for at least three years and must produce them to the Tribunal on request.
+
+PART IV - REPAIRS AND PRIVACY
+
+Section 12. Duty to keep the dwelling fit
+The landlord must keep the dwelling in a condition fit for human habitation, including a safe water supply, working sanitation, safe electrical wiring and a structure free from serious damp.
+
+Section 13. Urgent repairs
+Where a repair is urgent, such as a burst pipe or a dangerous electrical fault, the tenant must notify the landlord, who must start the repair within forty-eight hours. If the landlord fails to do so, the tenant may arrange the repair and deduct the reasonable cost from the next rent payment, up to one month's rent.
+
+Section 14. Non-urgent repairs
+For a repair that is not urgent, the landlord must complete the work within thirty days after receiving written notice from the tenant.
+
+Section 15. Landlord's entry
+A landlord may enter the dwelling only between eight in the morning and six in the evening and only after giving the tenant at least twenty-four hours' notice. In an emergency, such as a fire or a flood, the landlord may enter without notice.
+
+Section 16. Quiet enjoyment
+A landlord shall not interfere with the tenant's peaceful use of the dwelling. Cutting off water, electricity or gas to force a tenant to leave is prohibited.
+
+PART V - TENANT DUTIES
+
+Section 17. Care of the dwelling
+The tenant must keep the dwelling clean, must not damage it, and must report any defect promptly to the landlord.
+
+Section 18. Subletting
+A tenant may not sublet the whole or any part of the dwelling without the landlord's written consent. The landlord may not unreasonably refuse consent.
+
+Section 19. Alterations
+The tenant may not make structural alterations without written permission, but may hang pictures and make minor changes that can be undone without damage.
+
+PART VI - ENDING A TENANCY
+
+Section 20. Notice by the tenant
+A tenant who wishes to end a monthly tenancy must give the landlord at least thirty days' written notice.
+
+Section 21. Notice by the landlord
+A landlord who wishes to end a monthly tenancy must give the tenant at least sixty days' written notice, stating the reason. A landlord may not end a tenancy in order to punish a tenant for complaining about repairs.
+
+Section 22. Eviction grounds
+A landlord may apply to the Tribunal for an eviction order only on these grounds: the tenant has not paid rent for two consecutive months, the tenant has seriously damaged the dwelling, the tenant has sublet without consent, or the landlord genuinely needs the dwelling for personal occupation.
+
+Section 23. No self-help eviction
+A landlord must not remove a tenant, change the locks or remove the tenant's belongings without an order of the Tribunal. A landlord who does so is liable to pay compensation of up to three months' rent.
+
+Section 24. Death of a tenant
+On the death of a sole tenant, the tenancy continues for the benefit of the tenant's spouse or adult dependants for up to six months, after which it may be ended on thirty days' notice.
+
+PART VII - THE TRIBUNAL
+
+Section 25. Rent Tribunal
+The government shall establish a Rent Tribunal in every district to decide disputes under this Act. The Tribunal shall consist of one legally qualified chairperson and two members.
+
+Section 26. Filing a dispute
+A dispute must be filed with the Tribunal within one year from the date on which the cause of action arose. The Tribunal may accept a late application if the applicant shows sufficient cause for the delay.
+
+Section 27. Filing fee
+The fee for filing a dispute is five hundred rupees. The fee is waived for a tenant whose household income is below the poverty line notified by the government.
+
+Section 28. Time to decide
+The Tribunal shall try to decide each dispute within ninety days from the date of filing.
+
+Section 29. Appeal
+A person unhappy with the decision of the Tribunal may appeal to the District Court within thirty days of the decision.
+
+PART VIII - OFFENCES
+
+Section 30. Penalties
+A landlord who contravenes Section 4, Section 16 or Section 23 is liable to a fine of up to twenty thousand rupees. A second offence is punishable with a fine of up to fifty thousand rupees.
+
+Section 31. Retaliation
+Any act of retaliation against a tenant who has exercised a right under this Act, including a sudden rent increase or a threat of eviction, is void and may be treated as an offence under Section 30.

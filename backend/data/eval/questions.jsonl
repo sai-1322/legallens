@@ -1,0 +1,40 @@
+{"id": 1, "question": "How many days does a landlord have to give a written tenancy agreement?", "answerable": true, "gold_sections": ["Section 3"], "gold_answer_points": ["fourteen days"], "type": "direct"}
+{"id": 2, "question": "What is the maximum security deposit a landlord can demand?", "answerable": true, "gold_sections": ["Section 4"], "gold_answer_points": ["two months"], "type": "direct"}
+{"id": 3, "question": "Does the deposit have to be kept in a separate bank account?", "answerable": true, "gold_sections": ["Section 5"], "gold_answer_points": ["separate bank account"], "type": "direct"}
+{"id": 4, "question": "Within how many days must the deposit be returned after the tenant moves out?", "answerable": true, "gold_sections": ["Section 6"], "gold_answer_points": ["thirty days"], "type": "direct"}
+{"id": 5, "question": "What can a landlord deduct from the deposit?", "answerable": true, "gold_sections": ["Section 6"], "gold_answer_points": ["damage", "unpaid rent"], "type": "direct"}
+{"id": 6, "question": "When does a tenant get interest on the deposit?", "answerable": true, "gold_sections": ["Section 7"], "gold_answer_points": ["twelve months"], "type": "direct"}
+{"id": 7, "question": "How much notice is needed to increase the rent?", "answerable": true, "gold_sections": ["Section 9"], "gold_answer_points": ["ninety days"], "type": "direct"}
+{"id": 8, "question": "How often can the rent be raised?", "answerable": true, "gold_sections": ["Section 9"], "gold_answer_points": ["once", "twelve months"], "type": "direct"}
+{"id": 9, "question": "What is the largest late fee a landlord may charge?", "answerable": true, "gold_sections": ["Section 10"], "gold_answer_points": ["two percent"], "type": "direct"}
+{"id": 10, "question": "How long must the landlord keep rent receipts?", "answerable": true, "gold_sections": ["Section 11"], "gold_answer_points": ["three years"], "type": "direct"}
+{"id": 11, "question": "How quickly must a landlord start an urgent repair?", "answerable": true, "gold_sections": ["Section 13"], "gold_answer_points": ["forty-eight hours"], "type": "direct"}
+{"id": 12, "question": "How long does the landlord have to complete a non-urgent repair?", "answerable": true, "gold_sections": ["Section 14"], "gold_answer_points": ["thirty days"], "type": "direct"}
+{"id": 13, "question": "At what times can a landlord enter the dwelling?", "answerable": true, "gold_sections": ["Section 15"], "gold_answer_points": ["eight in the morning", "six in the evening"], "type": "direct"}
+{"id": 14, "question": "How much notice must a landlord give before entering?", "answerable": true, "gold_sections": ["Section 15"], "gold_answer_points": ["twenty-four hours"], "type": "direct"}
+{"id": 15, "question": "Can a landlord cut off my electricity to make me leave?", "answerable": true, "gold_sections": ["Section 16"], "gold_answer_points": ["prohibited"], "type": "paraphrase"}
+{"id": 16, "question": "Can I sublet my flat without permission?", "answerable": true, "gold_sections": ["Section 18"], "gold_answer_points": ["written consent"], "type": "paraphrase"}
+{"id": 17, "question": "How much notice must a tenant give to end a monthly tenancy?", "answerable": true, "gold_sections": ["Section 20"], "gold_answer_points": ["thirty days"], "type": "direct"}
+{"id": 18, "question": "How much notice must a landlord give to end a monthly tenancy?", "answerable": true, "gold_sections": ["Section 21"], "gold_answer_points": ["sixty days"], "type": "direct"}
+{"id": 19, "question": "On what grounds can a landlord evict a tenant?", "answerable": true, "gold_sections": ["Section 22"], "gold_answer_points": ["two consecutive months"], "type": "direct"}
+{"id": 20, "question": "What compensation can a tenant get if the landlord changes the locks without a tribunal order?", "answerable": true, "gold_sections": ["Section 23"], "gold_answer_points": ["three months"], "type": "direct"}
+{"id": 21, "question": "What happens to the tenancy when the tenant dies?", "answerable": true, "gold_sections": ["Section 24"], "gold_answer_points": ["six months"], "type": "paraphrase"}
+{"id": 22, "question": "What is the time limit to file a dispute with the Tribunal?", "answerable": true, "gold_sections": ["Section 26"], "gold_answer_points": ["one year"], "type": "direct"}
+{"id": 23, "question": "How much does it cost to file a dispute?", "answerable": true, "gold_sections": ["Section 27"], "gold_answer_points": ["five hundred rupees"], "type": "direct"}
+{"id": 24, "question": "How long does the Tribunal take to decide a dispute?", "answerable": true, "gold_sections": ["Section 28"], "gold_answer_points": ["ninety days"], "type": "direct"}
+{"id": 25, "question": "How long do I have to appeal a Tribunal decision?", "answerable": true, "gold_sections": ["Section 29"], "gold_answer_points": ["thirty days"], "type": "direct"}
+{"id": 26, "question": "What is the fine for a landlord who demands an excessive deposit?", "answerable": true, "gold_sections": ["Section 30", "Section 4"], "gold_answer_points": ["twenty thousand rupees"], "type": "multi"}
+{"id": 27, "question": "My landlord raised my rent by 25 percent. Is that allowed?", "answerable": true, "gold_sections": ["Section 9"], "gold_answer_points": ["void"], "type": "paraphrase"}
+{"id": 28, "question": "Who decides disputes between landlords and tenants?", "answerable": true, "gold_sections": ["Section 25"], "gold_answer_points": ["Rent Tribunal"], "type": "paraphrase"}
+{"id": 29, "question": "Can the landlord evict me for complaining about repairs?", "answerable": true, "gold_sections": ["Section 21", "Section 31"], "gold_answer_points": ["punish|retaliation"], "type": "paraphrase"}
+{"id": 30, "question": "Does this Act apply to hotels?", "answerable": true, "gold_sections": ["Section 1"], "gold_answer_points": ["hotels"], "type": "direct"}
+{"id": 31, "question": "Can the landlord come into my flat without telling me?", "answerable": true, "gold_sections": ["Section 15"], "gold_answer_points": ["twenty-four hours"], "type": "paraphrase"}
+{"id": 32, "question": "What is the tax rate on cryptocurrency gains?", "answerable": false, "gold_sections": [], "gold_answer_points": [], "type": "unanswerable"}
+{"id": 33, "question": "How do I register a new company?", "answerable": false, "gold_sections": [], "gold_answer_points": [], "type": "unanswerable"}
+{"id": 34, "question": "What is the speed limit on highways?", "answerable": false, "gold_sections": [], "gold_answer_points": [], "type": "unanswerable"}
+{"id": 35, "question": "What is the divorce procedure?", "answerable": false, "gold_sections": [], "gold_answer_points": [], "type": "unanswerable"}
+{"id": 36, "question": "Can a tenant keep pets in the apartment?", "answerable": false, "gold_sections": [], "gold_answer_points": [], "type": "near_miss"}
+{"id": 37, "question": "What is the maximum rent a landlord can charge in this state?", "answerable": false, "gold_sections": [], "gold_answer_points": [], "type": "near_miss"}
+{"id": 38, "question": "Is the landlord responsible for paying property tax?", "answerable": false, "gold_sections": [], "gold_answer_points": [], "type": "near_miss"}
+{"id": 39, "question": "What is the notice period for evicting a commercial tenant?", "answerable": false, "gold_sections": [], "gold_answer_points": [], "type": "near_miss"}
+{"id": 40, "question": "Who pays the electricity bill?", "answerable": false, "gold_sections": [], "gold_answer_points": [], "type": "near_miss"}

@@ -1,0 +1,1892 @@
+{
+  "meta": {
+    "date": "2026-10-15",
+    "documents": [
+      "demo_tenancy_act.txt"
+    ],
+    "n_questions": 40,
+    "n_answerable": 31,
+    "n_unanswerable": 9,
+    "threshold": 0.35,
+    "generator": "extractive",
+    "embedder": "tfidf",
+    "quick": false,
+    "note": "Selecting the best config on the same questions inflates its score. Treat differences under ~10 points as noise on a set this small."
+  },
+  "best_id": "window120-vector-norerank",
+  "configs": [
+    {
+      "id": "section-bm25-norerank",
+      "chunking": "section",
+      "window": 0,
+      "retrieval": "bm25",
+      "rerank": false,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.7741935483870968,
+        "hit@3": 0.967741935483871,
+        "hit@5": 1.0,
+        "mrr@5": 0.8629032258064516,
+        "correct": 0.7096774193548387,
+        "abstain_ok": 0.7777777777777778,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 21.638512475004745,
+        "latency_ms_p95": 0.49010300006102625,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5340734004245933,
+            0.8390437928156713
+          ],
+          "abstain_ok": [
+            0.4525833436728054,
+            0.9367762376877727
+          ]
+        },
+        "balanced": 0.7437275985663083
+      },
+      "seconds": 0.87
+    },
+    {
+      "id": "section-bm25-rerank",
+      "chunking": "section",
+      "window": 0,
+      "retrieval": "bm25",
+      "rerank": true,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.7741935483870968,
+        "hit@3": 0.967741935483871,
+        "hit@5": 1.0,
+        "mrr@5": 0.8736559139784946,
+        "correct": 0.7096774193548387,
+        "abstain_ok": 0.7777777777777778,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.25799182499781637,
+        "latency_ms_p95": 0.39711900001293543,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5340734004245933,
+            0.8390437928156713
+          ],
+          "abstain_ok": [
+            0.4525833436728054,
+            0.9367762376877727
+          ]
+        },
+        "balanced": 0.7437275985663083
+      },
+      "seconds": 0.02
+    },
+    {
+      "id": "section-vector-norerank",
+      "chunking": "section",
+      "window": 0,
+      "retrieval": "vector",
+      "rerank": false,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.7096774193548387,
+        "hit@3": 0.967741935483871,
+        "hit@5": 1.0,
+        "mrr@5": 0.8306451612903226,
+        "correct": 0.6774193548387096,
+        "abstain_ok": 0.7777777777777778,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 1.0589824000021508,
+        "latency_ms_p95": 1.3854519999085824,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5014068555995079,
+            0.8143076925268695
+          ],
+          "abstain_ok": [
+            0.4525833436728054,
+            0.9367762376877727
+          ]
+        },
+        "balanced": 0.7275985663082437
+      },
+      "seconds": 0.05
+    },
+    {
+      "id": "section-vector-rerank",
+      "chunking": "section",
+      "window": 0,
+      "retrieval": "vector",
+      "rerank": true,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.7419354838709677,
+        "hit@3": 0.967741935483871,
+        "hit@5": 1.0,
+        "mrr@5": 0.8467741935483871,
+        "correct": 0.6774193548387096,
+        "abstain_ok": 0.7777777777777778,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.8394118750089774,
+        "latency_ms_p95": 1.2576450000096884,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5014068555995079,
+            0.8143076925268695
+          ],
+          "abstain_ok": [
+            0.4525833436728054,
+            0.9367762376877727
+          ]
+        },
+        "balanced": 0.7275985663082437
+      },
+      "seconds": 0.04
+    },
+    {
+      "id": "section-hybrid-norerank",
+      "chunking": "section",
+      "window": 0,
+      "retrieval": "hybrid",
+      "rerank": false,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.7419354838709677,
+        "hit@3": 0.967741935483871,
+        "hit@5": 1.0,
+        "mrr@5": 0.8521505376344086,
+        "correct": 0.7096774193548387,
+        "abstain_ok": 0.7777777777777778,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.8694965000017874,
+        "latency_ms_p95": 1.0996550000754723,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5340734004245933,
+            0.8390437928156713
+          ],
+          "abstain_ok": [
+            0.4525833436728054,
+            0.9367762376877727
+          ]
+        },
+        "balanced": 0.7437275985663083
+      },
+      "seconds": 0.04
+    },
+    {
+      "id": "section-hybrid-rerank",
+      "chunking": "section",
+      "window": 0,
+      "retrieval": "hybrid",
+      "rerank": true,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.8064516129032258,
+        "hit@3": 0.967741935483871,
+        "hit@5": 1.0,
+        "mrr@5": 0.8897849462365591,
+        "correct": 0.7096774193548387,
+        "abstain_ok": 0.7777777777777778,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.8535040999987586,
+        "latency_ms_p95": 1.1820549999583818,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5340734004245933,
+            0.8390437928156713
+          ],
+          "abstain_ok": [
+            0.4525833436728054,
+            0.9367762376877727
+          ]
+        },
+        "balanced": 0.7437275985663083
+      },
+      "seconds": 0.04
+    },
+    {
+      "id": "window60-bm25-norerank",
+      "chunking": "window",
+      "window": 60,
+      "retrieval": "bm25",
+      "rerank": false,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.7741935483870968,
+        "hit@3": 0.9032258064516129,
+        "hit@5": 1.0,
+        "mrr@5": 0.8629032258064516,
+        "correct": 0.6451612903225806,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.35650752499520877,
+        "latency_ms_p95": 0.4202579999628142,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.469476380428149,
+            0.7888355225843418
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7670250896057347
+      },
+      "seconds": 0.02
+    },
+    {
+      "id": "window60-bm25-rerank",
+      "chunking": "window",
+      "window": 60,
+      "retrieval": "bm25",
+      "rerank": true,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.7741935483870968,
+        "hit@3": 0.9032258064516129,
+        "hit@5": 1.0,
+        "mrr@5": 0.8629032258064516,
+        "correct": 0.6451612903225806,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.29810964998659983,
+        "latency_ms_p95": 0.7595789999186309,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.469476380428149,
+            0.7888355225843418
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7670250896057347
+      },
+      "seconds": 0.02
+    },
+    {
+      "id": "window60-vector-norerank",
+      "chunking": "window",
+      "window": 60,
+      "retrieval": "vector",
+      "rerank": false,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.7096774193548387,
+        "hit@3": 0.967741935483871,
+        "hit@5": 1.0,
+        "mrr@5": 0.8413978494623655,
+        "correct": 0.6129032258064516,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.8488795750054123,
+        "latency_ms_p95": 1.1351329999342852,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.4382380114113197,
+            0.7626712464872843
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7508960573476702
+      },
+      "seconds": 0.04
+    },
+    {
+      "id": "window60-vector-rerank",
+      "chunking": "window",
+      "window": 60,
+      "retrieval": "vector",
+      "rerank": true,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.7096774193548387,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "mrr@5": 0.8440860215053764,
+        "correct": 0.6129032258064516,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.8188102249874873,
+        "latency_ms_p95": 1.0122800000544885,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.4382380114113197,
+            0.7626712464872843
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7508960573476702
+      },
+      "seconds": 0.04
+    },
+    {
+      "id": "window60-hybrid-norerank",
+      "chunking": "window",
+      "window": 60,
+      "retrieval": "hybrid",
+      "rerank": false,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.7741935483870968,
+        "hit@3": 0.9354838709677419,
+        "hit@5": 1.0,
+        "mrr@5": 0.8655913978494624,
+        "correct": 0.6451612903225806,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.852773549999597,
+        "latency_ms_p95": 1.0032839999212229,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.469476380428149,
+            0.7888355225843418
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7670250896057347
+      },
+      "seconds": 0.04
+    },
+    {
+      "id": "window60-hybrid-rerank",
+      "chunking": "window",
+      "window": 60,
+      "retrieval": "hybrid",
+      "rerank": true,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.7741935483870968,
+        "hit@3": 0.967741935483871,
+        "hit@5": 1.0,
+        "mrr@5": 0.8682795698924731,
+        "correct": 0.6451612903225806,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.875175175002596,
+        "latency_ms_p95": 1.0520360000327855,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.469476380428149,
+            0.7888355225843418
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7670250896057347
+      },
+      "seconds": 0.04
+    },
+    {
+      "id": "window120-bm25-norerank",
+      "chunking": "window",
+      "window": 120,
+      "retrieval": "bm25",
+      "rerank": false,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.8387096774193549,
+        "hit@3": 0.967741935483871,
+        "hit@5": 1.0,
+        "mrr@5": 0.9059139784946236,
+        "correct": 0.6774193548387096,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.42982547499832435,
+        "latency_ms_p95": 0.5456869999989067,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5014068555995079,
+            0.8143076925268695
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7831541218637992
+      },
+      "seconds": 0.03
+    },
+    {
+      "id": "window120-bm25-rerank",
+      "chunking": "window",
+      "window": 120,
+      "retrieval": "bm25",
+      "rerank": true,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.8387096774193549,
+        "hit@3": 0.967741935483871,
+        "hit@5": 1.0,
+        "mrr@5": 0.9059139784946236,
+        "correct": 0.6774193548387096,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.3038411000062524,
+        "latency_ms_p95": 0.5683340000359749,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5014068555995079,
+            0.8143076925268695
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7831541218637992
+      },
+      "seconds": 0.02
+    },
+    {
+      "id": "window120-vector-norerank",
+      "chunking": "window",
+      "window": 120,
+      "retrieval": "vector",
+      "rerank": false,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.8709677419354839,
+        "hit@3": 0.967741935483871,
+        "hit@5": 1.0,
+        "mrr@5": 0.9274193548387096,
+        "correct": 0.7096774193548387,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.9690715750110712,
+        "latency_ms_p95": 1.4236600000003818,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5340734004245933,
+            0.8390437928156713
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7992831541218638
+      },
+      "seconds": 0.05
+    },
+    {
+      "id": "window120-vector-rerank",
+      "chunking": "window",
+      "window": 120,
+      "retrieval": "vector",
+      "rerank": true,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.8387096774193549,
+        "hit@3": 0.967741935483871,
+        "hit@5": 1.0,
+        "mrr@5": 0.9112903225806451,
+        "correct": 0.6774193548387096,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.9173360750139636,
+        "latency_ms_p95": 1.2476730000798852,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5014068555995079,
+            0.8143076925268695
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7831541218637992
+      },
+      "seconds": 0.05
+    },
+    {
+      "id": "window120-hybrid-norerank",
+      "chunking": "window",
+      "window": 120,
+      "retrieval": "hybrid",
+      "rerank": false,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.8387096774193549,
+        "hit@3": 0.967741935483871,
+        "hit@5": 1.0,
+        "mrr@5": 0.9112903225806451,
+        "correct": 0.6774193548387096,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 1.0954939749979076,
+        "latency_ms_p95": 1.6890619999685441,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5014068555995079,
+            0.8143076925268695
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7831541218637992
+      },
+      "seconds": 0.05
+    },
+    {
+      "id": "window120-hybrid-rerank",
+      "chunking": "window",
+      "window": 120,
+      "retrieval": "hybrid",
+      "rerank": true,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.8387096774193549,
+        "hit@3": 0.967741935483871,
+        "hit@5": 1.0,
+        "mrr@5": 0.9112903225806451,
+        "correct": 0.6774193548387096,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.16129032258064516,
+        "faithful": 1.0,
+        "latency_ms_mean": 1.0941661000032354,
+        "latency_ms_p95": 1.461970000036672,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5014068555995079,
+            0.8143076925268695
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7831541218637992
+      },
+      "seconds": 0.05
+    },
+    {
+      "id": "window250-bm25-norerank",
+      "chunking": "window",
+      "window": 250,
+      "retrieval": "bm25",
+      "rerank": false,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.9032258064516129,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "mrr@5": 0.9516129032258065,
+        "correct": 0.6774193548387096,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.12903225806451613,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.6022196750024023,
+        "latency_ms_p95": 0.8318050000752919,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5014068555995079,
+            0.8143076925268695
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7831541218637992
+      },
+      "seconds": 0.04
+    },
+    {
+      "id": "window250-bm25-rerank",
+      "chunking": "window",
+      "window": 250,
+      "retrieval": "bm25",
+      "rerank": true,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.9032258064516129,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "mrr@5": 0.9516129032258065,
+        "correct": 0.6774193548387096,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.12903225806451613,
+        "faithful": 1.0,
+        "latency_ms_mean": 0.4772648249826261,
+        "latency_ms_p95": 0.7461939999302558,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5014068555995079,
+            0.8143076925268695
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7831541218637992
+      },
+      "seconds": 0.03
+    },
+    {
+      "id": "window250-vector-norerank",
+      "chunking": "window",
+      "window": 250,
+      "retrieval": "vector",
+      "rerank": false,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.967741935483871,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "mrr@5": 0.9838709677419355,
+        "correct": 0.6774193548387096,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.12903225806451613,
+        "faithful": 1.0,
+        "latency_ms_mean": 1.104531225010419,
+        "latency_ms_p95": 1.5365190000693474,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5014068555995079,
+            0.8143076925268695
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7831541218637992
+      },
+      "seconds": 0.06
+    },
+    {
+      "id": "window250-vector-rerank",
+      "chunking": "window",
+      "window": 250,
+      "retrieval": "vector",
+      "rerank": true,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.967741935483871,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "mrr@5": 0.9838709677419355,
+        "correct": 0.6774193548387096,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.12903225806451613,
+        "faithful": 1.0,
+        "latency_ms_mean": 1.062402874987356,
+        "latency_ms_p95": 1.444197999944663,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5014068555995079,
+            0.8143076925268695
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7831541218637992
+      },
+      "seconds": 0.06
+    },
+    {
+      "id": "window250-hybrid-norerank",
+      "chunking": "window",
+      "window": 250,
+      "retrieval": "hybrid",
+      "rerank": false,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.9354838709677419,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "mrr@5": 0.967741935483871,
+        "correct": 0.6774193548387096,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.12903225806451613,
+        "faithful": 1.0,
+        "latency_ms_mean": 1.066841050004541,
+        "latency_ms_p95": 1.4284369999586488,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5014068555995079,
+            0.8143076925268695
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7831541218637992
+      },
+      "seconds": 0.06
+    },
+    {
+      "id": "window250-hybrid-rerank",
+      "chunking": "window",
+      "window": 250,
+      "retrieval": "hybrid",
+      "rerank": true,
+      "metrics": {
+        "n_answerable": 31,
+        "n_unanswerable": 9,
+        "hit@1": 0.9032258064516129,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "mrr@5": 0.9516129032258065,
+        "correct": 0.6774193548387096,
+        "abstain_ok": 0.8888888888888888,
+        "false_abstain": 0.12903225806451613,
+        "faithful": 1.0,
+        "latency_ms_mean": 1.0965651000049093,
+        "latency_ms_p95": 1.5006419999963327,
+        "ci": {
+          "hit@5": [
+            0.889740999265246,
+            0.9999999999999999
+          ],
+          "correct": [
+            0.5014068555995079,
+            0.8143076925268695
+          ],
+          "abstain_ok": [
+            0.5649937852319399,
+            0.9801096286728695
+          ]
+        },
+        "balanced": 0.7831541218637992
+      },
+      "seconds": 0.06
+    }
+  ],
+  "best_by_type": {
+    "direct": {
+      "n": 23,
+      "ok": 18,
+      "rate": 0.782608695652174
+    },
+    "multi": {
+      "n": 1,
+      "ok": 0,
+      "rate": 0.0
+    },
+    "near_miss": {
+      "n": 5,
+      "ok": 4,
+      "rate": 0.8
+    },
+    "paraphrase": {
+      "n": 7,
+      "ok": 4,
+      "rate": 0.5714285714285714
+    },
+    "unanswerable": {
+      "n": 4,
+      "ok": 4,
+      "rate": 1.0
+    }
+  },
+  "best_records": [
+    {
+      "id": 1,
+      "type": "direct",
+      "answerable": true,
+      "question": "How many days does a landlord have to give a written tenancy agreement?",
+      "abstained": false,
+      "support": 0.88,
+      "answer": "A landlord must give the tenant a written tenancy agreement within fourteen days of the tenancy starting. The agreement must state the rent, the due date, the length of the tenancy and the amount of the deposit.",
+      "citations": [
+        "Section 2"
+      ],
+      "ms": 1.4236600000003818,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": false,
+      "faithful": 1.0
+    },
+    {
+      "id": 2,
+      "type": "direct",
+      "answerable": true,
+      "question": "What is the maximum security deposit a landlord can demand?",
+      "abstained": false,
+      "support": 0.697,
+      "answer": "Security deposit limit. A landlord shall not demand a deposit of more than two months' rent.",
+      "citations": [
+        "Section 6"
+      ],
+      "ms": 1.1809619999212373,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": false,
+      "faithful": 1.0
+    },
+    {
+      "id": 3,
+      "type": "direct",
+      "answerable": true,
+      "question": "Does the deposit have to be kept in a separate bank account?",
+      "abstained": false,
+      "support": 0.707,
+      "answer": "The landlord must keep the deposit in a separate bank account and must give the tenant the account details in writing.",
+      "citations": [
+        "Section 6"
+      ],
+      "ms": 1.062654000065777,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": false,
+      "faithful": 1.0
+    },
+    {
+      "id": 4,
+      "type": "direct",
+      "answerable": true,
+      "question": "Within how many days must the deposit be returned after the tenant moves out?",
+      "abstained": true,
+      "support": 0.341,
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "citations": [],
+      "ms": 0.6875400000581067,
+      "first_hit_rank": 1,
+      "points": [
+        0,
+        1
+      ],
+      "correct": false,
+      "cited_gold": false,
+      "faithful": null
+    },
+    {
+      "id": 5,
+      "type": "direct",
+      "answerable": true,
+      "question": "What can a landlord deduct from the deposit?",
+      "abstained": false,
+      "support": 0.9,
+      "answer": "A landlord shall not demand a deposit of more than two months' rent. The landlord may deduct only the reasonable cost of repairing damage beyond normal wear and tear and any unpaid rent, and must",
+      "citations": [
+        "Section 6"
+      ],
+      "ms": 0.8922020000454722,
+      "first_hit_rank": 1,
+      "points": [
+        2,
+        2
+      ],
+      "correct": true,
+      "cited_gold": true,
+      "faithful": 1.0
+    },
+    {
+      "id": 6,
+      "type": "direct",
+      "answerable": true,
+      "question": "When does a tenant get interest on the deposit?",
+      "abstained": false,
+      "support": 0.555,
+      "answer": "Interest on the deposit. Where the deposit is held for more than twelve months, the landlord must pay the tenant simple interest on it at the rate notified by the government each year.",
+      "citations": [
+        "Section 7"
+      ],
+      "ms": 0.9451620001073024,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": true,
+      "faithful": 1.0
+    },
+    {
+      "id": 7,
+      "type": "direct",
+      "answerable": true,
+      "question": "How much notice is needed to increase the rent?",
+      "abstained": false,
+      "support": 0.542,
+      "answer": "Rent increases. The landlord must give the tenant at least ninety days' written notice of the increase.",
+      "citations": [
+        "Section 9"
+      ],
+      "ms": 0.9199559999615303,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": true,
+      "faithful": 1.0
+    },
+    {
+      "id": 8,
+      "type": "direct",
+      "answerable": true,
+      "question": "How often can the rent be raised?",
+      "abstained": true,
+      "support": 0.044,
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "citations": [],
+      "ms": 0.7362430000057429,
+      "first_hit_rank": 2,
+      "points": [
+        0,
+        2
+      ],
+      "correct": false,
+      "cited_gold": false,
+      "faithful": null
+    },
+    {
+      "id": 9,
+      "type": "direct",
+      "answerable": true,
+      "question": "What is the largest late fee a landlord may charge?",
+      "abstained": false,
+      "support": 0.634,
+      "answer": "unpaid for more than seven days after the due date, the landlord may charge a late fee of no more than two percent of the monthly rent. A landlord may not charge a late fee more than once for the same overdue payment.",
+      "citations": [
+        "Section 10"
+      ],
+      "ms": 1.125463999983367,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": true,
+      "faithful": 1.0
+    },
+    {
+      "id": 10,
+      "type": "direct",
+      "answerable": true,
+      "question": "How long must the landlord keep rent receipts?",
+      "abstained": false,
+      "support": 0.85,
+      "answer": "The landlord must keep copies of all rent receipts for at least three years and must produce them to the Tribunal on request.",
+      "citations": [
+        "Section 10"
+      ],
+      "ms": 1.0281529999929262,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": false,
+      "faithful": 1.0
+    },
+    {
+      "id": 11,
+      "type": "direct",
+      "answerable": true,
+      "question": "How quickly must a landlord start an urgent repair?",
+      "abstained": false,
+      "support": 0.574,
+      "answer": "Where a repair is urgent, such as a burst pipe or a dangerous electrical fault, the tenant must notify the landlord, who must start the repair within forty-eight hours. For a repair that is not urgent, the landlord must complete the work within thirty days after receiving written notice from the tenant.",
+      "citations": [
+        "Section 13"
+      ],
+      "ms": 0.977804999934051,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": true,
+      "faithful": 1.0
+    },
+    {
+      "id": 12,
+      "type": "direct",
+      "answerable": true,
+      "question": "How long does the landlord have to complete a non-urgent repair?",
+      "abstained": false,
+      "support": 0.9,
+      "answer": "Non-urgent repairs. For a repair that is not urgent, the landlord must complete the work within thirty days after receiving written notice from the tenant.",
+      "citations": [
+        "Section 13"
+      ],
+      "ms": 1.0002919999578808,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": false,
+      "faithful": 1.0
+    },
+    {
+      "id": 13,
+      "type": "direct",
+      "answerable": true,
+      "question": "At what times can a landlord enter the dwelling?",
+      "abstained": false,
+      "support": 0.553,
+      "answer": "A landlord may enter the dwelling only between eight in the morning and six in the evening and only after giving the tenant at least twenty-four hours' notice. In an emergency, such as a fire or a flood, the landlord may enter without notice.",
+      "citations": [
+        "Section 15"
+      ],
+      "ms": 0.9512260000974493,
+      "first_hit_rank": 1,
+      "points": [
+        2,
+        2
+      ],
+      "correct": true,
+      "cited_gold": true,
+      "faithful": 1.0
+    },
+    {
+      "id": 14,
+      "type": "direct",
+      "answerable": true,
+      "question": "How much notice must a landlord give before entering?",
+      "abstained": false,
+      "support": 0.8,
+      "answer": "A landlord may enter the dwelling only between eight in the morning and six in the evening and only after giving the tenant at least twenty-four hours' notice. In an emergency, such as a fire or a flood, the landlord may enter without notice.",
+      "citations": [
+        "Section 15"
+      ],
+      "ms": 1.0492610000483182,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": true,
+      "faithful": 1.0
+    },
+    {
+      "id": 15,
+      "type": "paraphrase",
+      "answerable": true,
+      "question": "Can a landlord cut off my electricity to make me leave?",
+      "abstained": false,
+      "support": 0.471,
+      "answer": "Cutting off water, electricity or gas to force a tenant to leave is prohibited.",
+      "citations": [
+        "Section 15"
+      ],
+      "ms": 1.280769999993936,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": false,
+      "faithful": 1.0
+    },
+    {
+      "id": 16,
+      "type": "paraphrase",
+      "answerable": true,
+      "question": "Can I sublet my flat without permission?",
+      "abstained": false,
+      "support": 0.496,
+      "answer": "A tenant may not sublet the whole or any part of the dwelling without the landlord's written consent. The tenant may not make structural alterations without written permission, but may hang pictures and make minor changes that can be undone without damage.",
+      "citations": [
+        "Section 18"
+      ],
+      "ms": 1.1200510000435315,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": true,
+      "faithful": 1.0
+    },
+    {
+      "id": 17,
+      "type": "direct",
+      "answerable": true,
+      "question": "How much notice must a tenant give to end a monthly tenancy?",
+      "abstained": false,
+      "support": 0.867,
+      "answer": "A tenant who wishes to end a monthly tenancy must give the landlord at least thirty days' written notice. A landlord who wishes to end a monthly tenancy must give the tenant at least sixty days' written notice, stating the reason.",
+      "citations": [
+        "Section 22"
+      ],
+      "ms": 1.0216289999789296,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": false,
+      "faithful": 1.0
+    },
+    {
+      "id": 18,
+      "type": "direct",
+      "answerable": true,
+      "question": "How much notice must a landlord give to end a monthly tenancy?",
+      "abstained": false,
+      "support": 0.867,
+      "answer": "A tenant who wishes to end a monthly tenancy must give the landlord at least thirty days' written notice. A landlord who wishes to end a monthly tenancy must give the tenant at least sixty days' written notice, stating the reason.",
+      "citations": [
+        "Section 22"
+      ],
+      "ms": 1.009787000043616,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": false,
+      "faithful": 1.0
+    },
+    {
+      "id": 19,
+      "type": "direct",
+      "answerable": true,
+      "question": "On what grounds can a landlord evict a tenant?",
+      "abstained": false,
+      "support": 0.49,
+      "answer": "Eviction grounds. A landlord may apply to the Tribunal for an eviction order only on these grounds: the tenant has not paid rent for two consecutive months, the tenant has seriously damaged the dwelling, the tenant has sublet without consent, or the landlord genuinely needs the dwelling for personal occupation.",
+      "citations": [
+        "Section 22"
+      ],
+      "ms": 1.0539090000065698,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": true,
+      "faithful": 1.0
+    },
+    {
+      "id": 20,
+      "type": "direct",
+      "answerable": true,
+      "question": "What compensation can a tenant get if the landlord changes the locks without a tribunal order?",
+      "abstained": false,
+      "support": 0.668,
+      "answer": "A landlord must not remove a tenant, change the locks or remove the tenant's belongings without an order of the Tribunal.",
+      "citations": [
+        "Section 23"
+      ],
+      "ms": 1.0551650000252266,
+      "first_hit_rank": 1,
+      "points": [
+        0,
+        1
+      ],
+      "correct": false,
+      "cited_gold": true,
+      "faithful": 1.0
+    },
+    {
+      "id": 21,
+      "type": "paraphrase",
+      "answerable": true,
+      "question": "What happens to the tenancy when the tenant dies?",
+      "abstained": true,
+      "support": 0.155,
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "citations": [],
+      "ms": 0.6114269999670796,
+      "first_hit_rank": 4,
+      "points": [
+        0,
+        1
+      ],
+      "correct": false,
+      "cited_gold": false,
+      "faithful": null
+    },
+    {
+      "id": 22,
+      "type": "direct",
+      "answerable": true,
+      "question": "What is the time limit to file a dispute with the Tribunal?",
+      "abstained": false,
+      "support": 0.63,
+      "answer": "Filing a dispute. A dispute must be filed with the Tribunal within one year from the date on which the cause of action arose.",
+      "citations": [
+        "Section 26"
+      ],
+      "ms": 1.03819299999941,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": true,
+      "faithful": 1.0
+    },
+    {
+      "id": 23,
+      "type": "direct",
+      "answerable": true,
+      "question": "How much does it cost to file a dispute?",
+      "abstained": false,
+      "support": 0.669,
+      "answer": "Filing a dispute. A dispute must be filed with the Tribunal within one year from the date on which the cause of action arose.",
+      "citations": [
+        "Section 26"
+      ],
+      "ms": 1.2243540001009023,
+      "first_hit_rank": 1,
+      "points": [
+        0,
+        1
+      ],
+      "correct": false,
+      "cited_gold": false,
+      "faithful": 1.0
+    },
+    {
+      "id": 24,
+      "type": "direct",
+      "answerable": true,
+      "question": "How long does the Tribunal take to decide a dispute?",
+      "abstained": false,
+      "support": 0.587,
+      "answer": "The government shall establish a Rent Tribunal in every district to decide disputes under this Act. A dispute must be filed with the Tribunal within one year from the date on which the cause of action arose.",
+      "citations": [
+        "Section 26"
+      ],
+      "ms": 1.153218000013112,
+      "first_hit_rank": 2,
+      "points": [
+        0,
+        1
+      ],
+      "correct": false,
+      "cited_gold": false,
+      "faithful": 1.0
+    },
+    {
+      "id": 25,
+      "type": "direct",
+      "answerable": true,
+      "question": "How long do I have to appeal a Tribunal decision?",
+      "abstained": false,
+      "support": 0.8,
+      "answer": "A person unhappy with the decision of the Tribunal may appeal to the District Court within thirty days of the decision.",
+      "citations": [
+        "Section 30"
+      ],
+      "ms": 1.0171079999281574,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": false,
+      "faithful": 1.0
+    },
+    {
+      "id": 26,
+      "type": "multi",
+      "answerable": true,
+      "question": "What is the fine for a landlord who demands an excessive deposit?",
+      "abstained": false,
+      "support": 0.4,
+      "answer": "A landlord shall not demand a deposit of more than two months' rent. A landlord who demands more than this limit commits an offence and the excess amount must be returned to the tenant.",
+      "citations": [
+        "Section 6"
+      ],
+      "ms": 0.9740699999838398,
+      "first_hit_rank": 1,
+      "points": [
+        0,
+        1
+      ],
+      "correct": false,
+      "cited_gold": false,
+      "faithful": 1.0
+    },
+    {
+      "id": 27,
+      "type": "paraphrase",
+      "answerable": true,
+      "question": "My landlord raised my rent by 25 percent. Is that allowed?",
+      "abstained": true,
+      "support": 0.216,
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "citations": [],
+      "ms": 0.8181509999758418,
+      "first_hit_rank": 1,
+      "points": [
+        0,
+        1
+      ],
+      "correct": false,
+      "cited_gold": false,
+      "faithful": null
+    },
+    {
+      "id": 28,
+      "type": "paraphrase",
+      "answerable": true,
+      "question": "Who decides disputes between landlords and tenants?",
+      "abstained": false,
+      "support": 0.597,
+      "answer": "The government shall establish a Rent Tribunal in every district to decide disputes under this Act.",
+      "citations": [
+        "Section 26"
+      ],
+      "ms": 1.0343220000095243,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": false,
+      "faithful": 1.0
+    },
+    {
+      "id": 29,
+      "type": "paraphrase",
+      "answerable": true,
+      "question": "Can the landlord evict me for complaining about repairs?",
+      "abstained": false,
+      "support": 0.549,
+      "answer": "A landlord may not end a tenancy in order to punish a tenant for complaining about repairs.",
+      "citations": [
+        "Section 22"
+      ],
+      "ms": 1.1820600000191916,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": false,
+      "faithful": 1.0
+    },
+    {
+      "id": 30,
+      "type": "direct",
+      "answerable": true,
+      "question": "Does this Act apply to hotels?",
+      "abstained": false,
+      "support": 0.9,
+      "answer": "It does not apply to hotels, student hostels or premises let for less than thirty days.",
+      "citations": [
+        "Section 1"
+      ],
+      "ms": 1.8859460000157924,
+      "first_hit_rank": 1,
+      "points": [
+        1,
+        1
+      ],
+      "correct": true,
+      "cited_gold": true,
+      "faithful": 1.0
+    },
+    {
+      "id": 31,
+      "type": "paraphrase",
+      "answerable": true,
+      "question": "Can the landlord come into my flat without telling me?",
+      "abstained": true,
+      "support": 0.021,
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "citations": [],
+      "ms": 0.9958240000287333,
+      "first_hit_rank": 2,
+      "points": [
+        0,
+        1
+      ],
+      "correct": false,
+      "cited_gold": false,
+      "faithful": null
+    },
+    {
+      "id": 32,
+      "type": "unanswerable",
+      "answerable": false,
+      "question": "What is the tax rate on cryptocurrency gains?",
+      "abstained": true,
+      "support": 0.2,
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "citations": [],
+      "ms": 0.6952590000537384,
+      "first_hit_rank": null,
+      "faithful": null
+    },
+    {
+      "id": 33,
+      "type": "unanswerable",
+      "answerable": false,
+      "question": "How do I register a new company?",
+      "abstained": true,
+      "support": 0.0,
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "citations": [],
+      "ms": 0.5914070000017091,
+      "first_hit_rank": null,
+      "faithful": null
+    },
+    {
+      "id": 34,
+      "type": "unanswerable",
+      "answerable": false,
+      "question": "What is the speed limit on highways?",
+      "abstained": true,
+      "support": 0.224,
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "citations": [],
+      "ms": 0.561474000051021,
+      "first_hit_rank": null,
+      "faithful": null
+    },
+    {
+      "id": 35,
+      "type": "unanswerable",
+      "answerable": false,
+      "question": "What is the divorce procedure?",
+      "abstained": true,
+      "support": 0.0,
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "citations": [],
+      "ms": 0.47550000010687654,
+      "first_hit_rank": null,
+      "faithful": null
+    },
+    {
+      "id": 36,
+      "type": "near_miss",
+      "answerable": false,
+      "question": "Can a tenant keep pets in the apartment?",
+      "abstained": true,
+      "support": 0.177,
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "citations": [],
+      "ms": 0.6819999999834181,
+      "first_hit_rank": null,
+      "faithful": null
+    },
+    {
+      "id": 37,
+      "type": "near_miss",
+      "answerable": false,
+      "question": "What is the maximum rent a landlord can charge in this state?",
+      "abstained": false,
+      "support": 0.399,
+      "answer": "unpaid for more than seven days after the due date, the landlord may charge a late fee of no more than two percent of the monthly rent. A landlord may not charge a late fee more than once for the same overdue payment.",
+      "citations": [
+        "Section 10"
+      ],
+      "ms": 1.0187889999997424,
+      "first_hit_rank": null,
+      "faithful": 1.0
+    },
+    {
+      "id": 38,
+      "type": "near_miss",
+      "answerable": false,
+      "question": "Is the landlord responsible for paying property tax?",
+      "abstained": true,
+      "support": 0.178,
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "citations": [],
+      "ms": 0.7240769999725671,
+      "first_hit_rank": null,
+      "faithful": null
+    },
+    {
+      "id": 39,
+      "type": "near_miss",
+      "answerable": false,
+      "question": "What is the notice period for evicting a commercial tenant?",
+      "abstained": true,
+      "support": 0.314,
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "citations": [],
+      "ms": 0.8143090000203301,
+      "first_hit_rank": null,
+      "faithful": null
+    },
+    {
+      "id": 40,
+      "type": "near_miss",
+      "answerable": false,
+      "question": "Who pays the electricity bill?",
+      "abstained": true,
+      "support": 0.288,
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "citations": [],
+      "ms": 0.7434839999405085,
+      "first_hit_rank": null,
+      "faithful": null
+    }
+  ],
+  "failures": [
+    {
+      "id": 4,
+      "type": "direct",
+      "category": "false_abstain",
+      "question": "Within how many days must the deposit be returned after the tenant moves out?",
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "support": 0.341,
+      "first_hit_rank": 1
+    },
+    {
+      "id": 8,
+      "type": "direct",
+      "category": "false_abstain",
+      "question": "How often can the rent be raised?",
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "support": 0.044,
+      "first_hit_rank": 2
+    },
+    {
+      "id": 20,
+      "type": "direct",
+      "category": "answer_incomplete",
+      "question": "What compensation can a tenant get if the landlord changes the locks without a tribunal order?",
+      "answer": "A landlord must not remove a tenant, change the locks or remove the tenant's belongings without an order of the Tribunal.",
+      "support": 0.668,
+      "first_hit_rank": 1
+    },
+    {
+      "id": 21,
+      "type": "paraphrase",
+      "category": "false_abstain",
+      "question": "What happens to the tenancy when the tenant dies?",
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "support": 0.155,
+      "first_hit_rank": 4
+    },
+    {
+      "id": 23,
+      "type": "direct",
+      "category": "answer_incomplete",
+      "question": "How much does it cost to file a dispute?",
+      "answer": "Filing a dispute. A dispute must be filed with the Tribunal within one year from the date on which the cause of action arose.",
+      "support": 0.669,
+      "first_hit_rank": 1
+    },
+    {
+      "id": 24,
+      "type": "direct",
+      "category": "ranked_below_top1",
+      "question": "How long does the Tribunal take to decide a dispute?",
+      "answer": "The government shall establish a Rent Tribunal in every district to decide disputes under this Act. A dispute must be filed with the Tribunal within one year from the date on which the cause of action arose.",
+      "support": 0.587,
+      "first_hit_rank": 2
+    },
+    {
+      "id": 26,
+      "type": "multi",
+      "category": "answer_incomplete",
+      "question": "What is the fine for a landlord who demands an excessive deposit?",
+      "answer": "A landlord shall not demand a deposit of more than two months' rent. A landlord who demands more than this limit commits an offence and the excess amount must be returned to the tenant.",
+      "support": 0.4,
+      "first_hit_rank": 1
+    },
+    {
+      "id": 27,
+      "type": "paraphrase",
+      "category": "false_abstain",
+      "question": "My landlord raised my rent by 25 percent. Is that allowed?",
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "support": 0.216,
+      "first_hit_rank": 1
+    },
+    {
+      "id": 31,
+      "type": "paraphrase",
+      "category": "false_abstain",
+      "question": "Can the landlord come into my flat without telling me?",
+      "answer": "I couldn't find this in the loaded documents, so I won't guess.",
+      "support": 0.021,
+      "first_hit_rank": 2
+    },
+    {
+      "id": 37,
+      "type": "near_miss",
+      "category": "false_answer",
+      "question": "What is the maximum rent a landlord can charge in this state?",
+      "answer": "unpaid for more than seven days after the due date, the landlord may charge a late fee of no more than two percent of the monthly rent. A landlord may not charge a late fee more than once for the same overdue payment.",
+      "support": 0.399,
+      "first_hit_rank": null
+    }
+  ],
+  "threshold_sweep": [
+    {
+      "threshold": 0.0,
+      "false_abstain": 0.0,
+      "correct": 0.7741935483870968,
+      "abstain_ok": 0.0
+    },
+    {
+      "threshold": 0.05,
+      "false_abstain": 0.06451612903225806,
+      "correct": 0.7741935483870968,
+      "abstain_ok": 0.2222222222222222
+    },
+    {
+      "threshold": 0.1,
+      "false_abstain": 0.06451612903225806,
+      "correct": 0.7741935483870968,
+      "abstain_ok": 0.2222222222222222
+    },
+    {
+      "threshold": 0.15,
+      "false_abstain": 0.06451612903225806,
+      "correct": 0.7741935483870968,
+      "abstain_ok": 0.2222222222222222
+    },
+    {
+      "threshold": 0.2,
+      "false_abstain": 0.0967741935483871,
+      "correct": 0.7741935483870968,
+      "abstain_ok": 0.4444444444444444
+    },
+    {
+      "threshold": 0.25,
+      "false_abstain": 0.12903225806451613,
+      "correct": 0.7419354838709677,
+      "abstain_ok": 0.6666666666666666
+    },
+    {
+      "threshold": 0.3,
+      "false_abstain": 0.12903225806451613,
+      "correct": 0.7419354838709677,
+      "abstain_ok": 0.7777777777777778
+    },
+    {
+      "threshold": 0.35,
+      "false_abstain": 0.16129032258064516,
+      "correct": 0.7096774193548387,
+      "abstain_ok": 0.8888888888888888
+    },
+    {
+      "threshold": 0.4,
+      "false_abstain": 0.16129032258064516,
+      "correct": 0.7096774193548387,
+      "abstain_ok": 1.0
+    },
+    {
+      "threshold": 0.45,
+      "false_abstain": 0.1935483870967742,
+      "correct": 0.7096774193548387,
+      "abstain_ok": 1.0
+    },
+    {
+      "threshold": 0.5,
+      "false_abstain": 0.2903225806451613,
+      "correct": 0.6129032258064516,
+      "abstain_ok": 1.0
+    },
+    {
+      "threshold": 0.55,
+      "false_abstain": 0.3548387096774194,
+      "correct": 0.5483870967741935,
+      "abstain_ok": 1.0
+    },
+    {
+      "threshold": 0.6,
+      "false_abstain": 0.5161290322580645,
+      "correct": 0.41935483870967744,
+      "abstain_ok": 1.0
+    },
+    {
+      "threshold": 0.65,
+      "false_abstain": 0.5806451612903226,
+      "correct": 0.3548387096774194,
+      "abstain_ok": 1.0
+    },
+    {
+      "threshold": 0.7,
+      "false_abstain": 0.6774193548387096,
+      "correct": 0.3225806451612903,
+      "abstain_ok": 1.0
+    },
+    {
+      "threshold": 0.75,
+      "false_abstain": 0.7096774193548387,
+      "correct": 0.2903225806451613,
+      "abstain_ok": 1.0
+    },
+    {
+      "threshold": 0.8,
+      "false_abstain": 0.7096774193548387,
+      "correct": 0.2903225806451613,
+      "abstain_ok": 1.0
+    }
+  ]
+}

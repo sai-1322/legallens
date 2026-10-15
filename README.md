@@ -32,6 +32,7 @@ failure categories, and a refusal threshold you can see the trade-off of.
 | Demo corpus | **A fictional "Demo Residential Tenancy Act"**, written for testing. It is not real law |
 | Demo questions (40) | Written with AI help *alongside* the fictional Act, so the numbers below are **optimistic**. Replace with your own questions on real documents |
 | LLM mode (Anthropic / OpenAI-compatible) | Request/response handling, retries and error paths are **tested against a mocked server**. It has **never been run against a real LLM API** |
+| Dockerfile and CI workflow | Written but **not run** (no Docker daemon or GitHub runner in the build environment). The same steps (install, test, build, serve) were verified from a fresh git clone |
 | Neural embeddings (`EMBEDDER=st`) | Optional code path, **not run** (no model download in the build environment) |
 
 ## Results on the demo set (extractive answers, default config)

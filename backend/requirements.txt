@@ -1,0 +1,10 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+numpy>=1.26
+scikit-learn>=1.4
+pypdf>=4.0
+httpx>=0.27
+pydantic>=2.6
+pytest>=8.0
+# optional upgrades (not needed to run):
+# sentence-transformers>=3.0   # dense embeddings: set EMBEDDER=st
